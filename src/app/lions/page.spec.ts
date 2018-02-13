@@ -19,6 +19,7 @@ import { ANIMAL_TYPES } from '../animals/model';
 })
 class MockAnimalListComponent {
   @Input() animalsName: string;
+  @Input() animalsColor: Observable<string>;
   @Input() animals: Observable<any>;
   @Input() loading: Observable<boolean>;
   @Input() error: Observable<any>;

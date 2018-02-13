@@ -5,6 +5,7 @@ import { Action } from 'redux';
 
 const INITIAL_STATE: IAnimalList = {
   items: {},
+  animalsColor: '',
   loading: false,
   error: null,
 };

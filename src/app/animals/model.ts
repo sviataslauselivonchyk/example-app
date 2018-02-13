@@ -16,6 +16,7 @@ export interface IAnimal {
 
 export interface IAnimalList {
   items: {};
+  animalsColor: string;
   loading: boolean;
   error: any;
 }

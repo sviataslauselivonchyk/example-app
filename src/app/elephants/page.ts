@@ -18,6 +18,9 @@ export const sortAnimals = (animalDictionary$: Observable<{}>) =>
 })
 export class ElephantPageComponent {
   // Get elephant-related data out of the Redux store as observables.
+  @select(['elephant', 'animalsColor'])
+  readonly animalsColor$: Observable<string>;
+
   @select$(['elephant', 'items'], sortAnimals)
   readonly animals$: Observable<IAnimal[]>;
 
